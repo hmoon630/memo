@@ -65,14 +65,18 @@ https://unix.stackexchange.com/questions/333225/which-process-is-proc-self-for
 
 > 그래서 커널 메모리 어디에 저장되는거지? 커널이 알아서 관리하니까 굳이 알 필요가 없는건가?
 
-==== todo ====
+==== 0627 ====
 
 - /proc
+- daemon
+- cron
+- IPC
+- Unix Domain Socket
+- cgroup
+- chroot
+
+==== todo ====
+
 - grep, 정규식
 - 네트워크 명령어
-- daemon
-- port?
-- cron
-- 공유 메모리
-- IPC
-- cgroup
+-
