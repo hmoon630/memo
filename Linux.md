@@ -18,7 +18,6 @@
 - file descriptor
 
 - 파일 디렉토리 구조
-- 리눅스는 파일로 구성된다
 - 리눅스의 디렉터리 구조
 
 ## /proc/self
@@ -27,7 +26,7 @@
 
 https://unix.stackexchange.com/questions/333225/which-process-is-proc-self-for
 
-> > 즉, /proc/self를 읽으려고 하면(커널 모듈 호출..?) 그때 동적으로 response를 생성해서 보여주는 것??
+> 즉, /proc/self를 읽으려고 하면(커널 모듈 호출..?) 그때 동적으로 response를 생성해서 보여주는 것??
 
 ==== 0624 ====
 
@@ -42,14 +41,6 @@ https://unix.stackexchange.com/questions/333225/which-process-is-proc-self-for
 - 잡과 프로세스의 종료
 - 리다이렉션
 - 파이프라인
-- wc 명령어: 바이트 수, 단어 수, 행 수 세기
-- sort 명령어: 행 단위로 정렬하기
-- uniq 명령어: 중복 제거하기
-- cut 명령어: 입력의 일부 추출하기
-- tr 명령어: 문자 교환과 삭제하기
-- tail 명령어: 마지막 부분 출력하기
-- diff 명령어: 차이 출력하기
-- sed 명령어: 스트림 에디터
 - awk
 - pipe, socket
 
@@ -75,8 +66,40 @@ https://unix.stackexchange.com/questions/333225/which-process-is-proc-self-for
 - cgroup
 - chroot
 
-==== todo ====
+==== 0628 ====
 
-- grep, 정규식
+- ssl cert expriry check(https://sh-safer.tistory.com/39)
 - 네트워크 명령어
--
+
+==== 0629 ====
+
+- shell string 처리 (sed, awk, cut, tr 등)
+- shell if 없이 분기 처리(http://soopsaram.com/documentudy/2021/10/10/shell-script-without-if-else/)
+
+==== 0630 ====
+
+- [파일이란 무엇인가?](https://sunyzero.tistory.com/260)
+
+  > 10테라 바이트의 정보를 저장할 때 파일 1개로 저장하는 것이 효율적일까? 1TB 10개로 저장하는게 효율적일까? 그것도 아니면 10MB짜리 100만개로 저장하는 것이 효율적일까?
+
+  - 10MB 100만개는 메타데이터의 양이 그만큼 늘어나게 된다. 그래서 비효율 적이다.
+  - 10테라 바이트 파일 하나로 저장하기에는 Ext2/3 (4kB block size) 기준 파일의 최대 크기는 2TB이다. 하나의 파일로 저장하기는 어려워보인다.
+    > 하지만 XFS에서는 8 EiB 까지 저장된다.
+    > 결국 하나의 파일로 저장하는 것이 메타데이터를 줄이기 떄문에 더 효율적인가?
+
+- VFS
+
+==== test ====
+
+## EBS Volume mount
+
+1. (mkfs 로 디바이스 file system 설정) 이미 데이터가 있다면 스킵, 주의
+2. mount /dev/DEVICE_NAME /MOUNT_DIRECTORY
+
+## linux list all user
+
+cat /etc/passwd | cut -d ":" -f 1
+
+## DNS host
+
+cat /etc/resolv.conf | grep nameserver | cut -d " " -f 2
