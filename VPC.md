@@ -23,7 +23,7 @@
 
 ## 0705
 
-- vpc concepts(NAT, )
+- vpc concepts(NAT, Peering, Transit gateway)
 - Transit Gateway
   - [Connecting Overlapping VPCs with Private NAT](https://cloudnetworks.io/2021-07-12-private-nat-overlapping/)
     - 각 VPC에 public subnet과 ec2 구성
@@ -46,9 +46,17 @@
 
 ICMP를 이용한 DDOS를 방어하기 위한것? [Shoud I block ICMP](http://shouldiblockicmp.com/)
 
+> Peering은 별도의 장비를 사용하지 않고 기존의 장비만으로 서비스 된다고 한다. 그렇다면 어떻게 다른 VPC로의 트래픽을 허용/차단 하는 것인가? Peering Connection을 생성함으로서 허용해주는 정책이 생성되는 것인가?
+
+## 0706
+
+- private link
+- Endpoints (gateway, interface of S3)
+- [vpc endpoint service workshop](https://networking.workshop.aws/intermediate/5-vpc-endpoint-services/10-vpc-endpoint-services-overview.html)
+
 ## todo
 
-- Endpoints
+- gateway loadbalancer
 - ACL
 - security groups
 - Firewall
@@ -56,5 +64,3 @@ ICMP를 이용한 DDOS를 방어하기 위한것? [Shoud I block ICMP](http://sh
 - Transit gateway multicast
 - Traffic mirroring
 - subnet prefix
-- private link
-- gateway loadbalancer
