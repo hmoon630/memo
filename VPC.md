@@ -54,13 +54,15 @@ ICMP를 이용한 DDOS를 방어하기 위한것? [Shoud I block ICMP](http://sh
 - Endpoints (gateway, interface of S3)
 - [vpc endpoint service workshop](https://networking.workshop.aws/intermediate/5-vpc-endpoint-services/10-vpc-endpoint-services-overview.html)
 
+## 0707
+
+- vpc concepts(ACL, Security group, egress only igw, DHCP Option set, Prefix list)
+- [Site-to-Site VPN](https://medium.com/saltware/openswan%EC%9C%BC%EB%A1%9C-aws-site-to-site-vpn-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0-9220a506acb3)
+- [Maintain a Prefix List of EC2 Private IP Addresses using EventBridge](https://www.chiwaichan.co.nz/2022/05/28/maintain-a-prefix-list-of-ec2-private-ip-addresses-using-eventbridge/)
+
 ## todo
 
 - gateway loadbalancer
-- ACL
-- security groups
 - Firewall
-- VPN
 - Transit gateway multicast
 - Traffic mirroring
-- subnet prefix
