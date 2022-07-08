@@ -46,7 +46,7 @@
 
 ICMP를 이용한 DDOS를 방어하기 위한것? [Shoud I block ICMP](http://shouldiblockicmp.com/)
 
-> Peering은 별도의 장비를 사용하지 않고 기존의 장비만으로 서비스 된다고 한다. 그렇다면 어떻게 다른 VPC로의 트래픽을 허용/차단 하는 것인가? Peering Connection을 생성함으로서 허용해주는 정책이 생성되는 것인가?
+> Peering은 별도의 장비를 사용하지 않고 기존의 장비만으로 서비스 된다고 한다. 그렇다면 어떻게 다른 VPC로의 트래픽을 허용/차단 하는 것인가? 원래 물리적으로는 연결되어 있으니 정책을 사용해서 컨트롤 하는 것인가?
 
 ## 0706
 
@@ -60,9 +60,15 @@ ICMP를 이용한 DDOS를 방어하기 위한것? [Shoud I block ICMP](http://sh
 - [Site-to-Site VPN](https://medium.com/saltware/openswan%EC%9C%BC%EB%A1%9C-aws-site-to-site-vpn-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0-9220a506acb3)
 - [Maintain a Prefix List of EC2 Private IP Addresses using EventBridge](https://www.chiwaichan.co.nz/2022/05/28/maintain-a-prefix-list-of-ec2-private-ip-addresses-using-eventbridge/)
 
+## 0708
+
+- concepts(Direct Connect, Global accelerator, Site to site VPN)
+- [GWLB Workshop](https://networking.workshop.aws/gwlb.html)
+- gateway loadbalancer
+- gateway route table
+
 ## todo
 
-- gateway loadbalancer
 - Firewall
 - Transit gateway multicast
 - Traffic mirroring
