@@ -52,7 +52,7 @@ ICMP를 이용한 DDOS를 방어하기 위한것? [Shoud I block ICMP](http://sh
 
 - private link
 - Endpoints (gateway, interface of S3)
-- [vpc endpoint service workshop](https://networking.workshop.aws/intermediate/5-vpc-endpoint-services/10-vpc-endpoint-services-overview.html)
+- [vpc endpoint service workshop](https://catalog.workshops.aws/networking/en-US/intermediate/5-vpc-endpoint-services)
 
 ## 0707
 
@@ -63,9 +63,20 @@ ICMP를 이용한 DDOS를 방어하기 위한것? [Shoud I block ICMP](http://sh
 ## 0708
 
 - concepts(Direct Connect, Global accelerator, Site to site VPN)
-- [GWLB Workshop](https://networking.workshop.aws/gwlb.html)
+- [GWLB Workshop](https://catalog.workshops.aws/networking/en-US/gwlb)
 - gateway loadbalancer
 - gateway route table
+
+## 0711
+
+- [\[Workshop\] Network monitoring](https://catalog.workshops.aws/networking/en-US/beginner/lab3)
+- [simple aws cli script](./scripts/make-subnets-public.sh)
+
+  > 이러한 스크립팅이 대회에서 사용될 일이 있는가? 혹은 시간 단축에 도움이 되나?
+
+- [\[Workshop\] Transit Gateway Multicast](https://catalog.workshops.aws/networking/en-US/multicast)
+- 번외 1 [\[토스 \| SLASH 22\] 어떻게 안정적인 서비스를 빠르게, 자주 출시할 것인가?](https://youtu.be/oakvibIKToc)
+- 번외 2 [\[토스 \| SLASH22\] 잃어버린 개발자의 시간을 찾아서: 매일 하루를 아끼는 DevOps 이야기](https://youtu.be/2IE68SDTYvI)
 
 ## todo
 
