@@ -78,8 +78,12 @@ ICMP를 이용한 DDOS를 방어하기 위한것? [Shoud I block ICMP](http://sh
 - 번외 1 [\[토스 \| SLASH 22\] 어떻게 안정적인 서비스를 빠르게, 자주 출시할 것인가?](https://youtu.be/oakvibIKToc)
 - 번외 2 [\[토스 \| SLASH22\] 잃어버린 개발자의 시간을 찾아서: 매일 하루를 아끼는 DevOps 이야기](https://youtu.be/2IE68SDTYvI)
 
+## 0712
+
+- [Traffic mirroing](https://www.wisen.co.kr/pages/blog/blog-detail.html?idx=11935)
+- [AWS Network Firewall Workshop](https://catalog.workshops.aws/networkfirewall/en-US)
+- [Hands-on Network Firewall Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/d071f444-e854-4f3f-98c8-025fa0d1de2f/en-US)
+
 ## todo
 
-- Firewall
-- Transit gateway multicast
-- Traffic mirroring
+- what's next?
