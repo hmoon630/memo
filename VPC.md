@@ -84,6 +84,11 @@ ICMP를 이용한 DDOS를 방어하기 위한것? [Shoud I block ICMP](http://sh
 - [AWS Network Firewall Workshop](https://catalog.workshops.aws/networkfirewall/en-US)
 - [Hands-on Network Firewall Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/d071f444-e854-4f3f-98c8-025fa0d1de2f/en-US)
 
+## 0713
+
+- 0712 Hands-on Network Firewall Workshop Lab3
+- S/W Certificate 준비 & 시험
+
 ## todo
 
 - what's next?
