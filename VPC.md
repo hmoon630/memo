@@ -89,6 +89,12 @@ ICMP를 이용한 DDOS를 방어하기 위한것? [Shoud I block ICMP](http://sh
 - 0712 Hands-on Network Firewall Workshop Lab3
 - S/W Certificate 준비 & 시험
 
+## 0714
+
+- [AWS Client VPN Basic workshop (Japanese)](https://catalog.us-east-1.prod.workshops.aws/workshops/be2b90c2-06a1-4ae6-84b3-c705049d2b6f/ja-JP)
+- [VPC Flow logs Analysis using Amazon Elasticsearch Service](https://catalog.us-east-1.prod.workshops.aws/workshops/31add0d8-bff3-441d-ae65-ed74106a5cb5/en-US)
+- [AWS Global Accelerator Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/effb1517-b193-4c59-8da5-ce2abdb0b656/en-US/create-accelerator)
+
 ## todo
 
 - what's next?

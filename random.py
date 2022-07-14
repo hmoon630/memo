@@ -1,15 +1,13 @@
-from random import randint, shuffle
+from itertools import product, combinations
+from operator import itemgetter
 
-for i in range(5):
-    nums = set()
-    while len(nums) < 6:
-        nums.add(randint(1, 45))
+numbers = list(range(8))
+number_product = list(product(numbers, repeat=2))
+number_combination = list(combinations(number_product, 3))
+full_product = list(product(numbers, repeat=6))
+print(len(number_combination))
+print(len(full_product))
 
-    print(nums)
-    
-print("=====================")
-
-for i in range(5):
-    nums = list(range(1, 46))
-    shuffle(nums)
-    print(nums[:6])
+a = [0, 10, 20, 30, 4, 5, 6]
+b = itemgetter(1, 3, 2)
+print(b(a))
