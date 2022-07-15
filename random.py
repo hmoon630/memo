@@ -1,13 +1,17 @@
-from itertools import product, combinations
-from operator import itemgetter
+from requests import get
+from time import time
 
-numbers = list(range(8))
-number_product = list(product(numbers, repeat=2))
-number_combination = list(combinations(number_product, 3))
-full_product = list(product(numbers, repeat=6))
-print(len(number_combination))
-print(len(full_product))
+urls = [
+    ("GA-ap-northeast-1", "http://a50c151980ffc4f9b.awsglobalaccelerator.com"),
+    ("us-west-2", "http://AGAWo-Appli-F6FYTNC6BC33-2116125174.us-west-2.elb.amazonaws.com"),
+    # ("ap-northeast-2", "http://AGAWo-Appli-8DUJWVWZW60T-1230806725.ap-northeast-2.elb.amazonaws.com"),
+    # ("ap-northeast-1", "http://AGAWo-Appli-1HHHMI9UBE989-630066877.ap-northeast-1.elb.amazonaws.com"),
+]
 
-a = [0, 10, 20, 30, 4, 5, 6]
-b = itemgetter(1, 3, 2)
-print(b(a))
+for url in urls:
+    start = time()
+    
+    for i in range(100):
+        result = get(url[1])
+    
+    print(f"{url[0]}: {(time() - start) / 100}")

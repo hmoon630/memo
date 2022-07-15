@@ -95,6 +95,16 @@ ICMP를 이용한 DDOS를 방어하기 위한것? [Shoud I block ICMP](http://sh
 - [VPC Flow logs Analysis using Amazon Elasticsearch Service](https://catalog.us-east-1.prod.workshops.aws/workshops/31add0d8-bff3-441d-ae65-ed74106a5cb5/en-US)
 - [AWS Global Accelerator Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/effb1517-b193-4c59-8da5-ce2abdb0b656/en-US/create-accelerator)
 
+## 0715
+
+- [curl을 이용한 rtt 측정](http://www.rcy.co.kr/xeb/index.php?mid=study&document_srl=12267&m=0)
+
+  - 위의 GA에 curl 요청을 보냈을 때 엔드포인트 리전에 관계 없이 TCP 연결 시간이 4ms 정도로 매우 짧다 -> 가까운 GA Edge와 TCP handshake 하기 때문에 그러한 것
+  - us-west-2, ap-northeast-1, ap-northeast-2를 엔드포인트로 지정하였을 때 http 통신이 평균 282ms, 100ms, 31ms 소요되었다. -> 리전이 멀어질 수록 4배, 10배 까지 차이를 확인
+  - 각 리전으로 직접 요청을 보내면 평균 334ms, 107ms, 32ms 정도 소요되었다. -> 18%, 7%, 0%(약 1ms 차이) 정도 성능 차이를 보였다.
+
+- [Vpc Endpoint Workshop](https://www.vpcendpointworkshop.com/)
+
 ## todo
 
 - what's next?
