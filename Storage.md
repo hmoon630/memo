@@ -12,9 +12,10 @@
 - concepts(data sync, backup, storage gateway)
 - s3 presigned url - [boto3](server/main.py)
 
-### questions
+## 0720
 
-> file gateway를 통해 S3를 /mnt/fgw위치에 mount 하였다. /mnt/fgw 위치에 파일을 작성/수정 하면 실시간으로 작성/수정이 되는가?
+- [pirate s3 game](http://s3game-level1.s3-website.us-east-2.amazonaws.com/level1.html)
+- [galaxy s3 game](http://s3game-galaxy-level1.s3-website.us-east-2.amazonaws.com/)
 
 ## todo
 
