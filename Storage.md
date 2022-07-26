@@ -46,6 +46,7 @@
 - [AMAZON S3 - BI-DIRECTIONAL CROSS-REGION REPLICATION (CRR)](https://disaster-recovery.workshop.aws/en/labs/intermediate/bidire-rep-s3.html)
 - concepts(aws backup)
 - [Amazon EFS Workshop](https://github.com/aws-samples/amazon-efs-workshop)
+- efs iam based mount using efs helper
 
 ## todo
 
