@@ -35,17 +35,23 @@
 - 일단 성능과 비용 측면에서 보면 당연히 cloudfront 쪽이 우세할 것이다. cloudfront의 캐싱으로 trasnfer 비용도 줄어들고, 응답 시간도 줄어들 것이다.
 - 라고 생각했으나 http 요청 수에 대한 요금과 origin으로 데이터 전송하는 비용도 있다.
 
+## 0725
+
+- concepts(cross account policy, lifecycle, Glacier, s3 multipart upload)
+- cli s3api(versioning)
+- [AMAZON S3 - BI-DIRECTIONAL CROSS-REGION REPLICATION (CRR)](https://disaster-recovery.workshop.aws/en/labs/intermediate/bidire-rep-s3.html)
+
+## 0726
+
+- [AMAZON S3 - BI-DIRECTIONAL CROSS-REGION REPLICATION (CRR)](https://disaster-recovery.workshop.aws/en/labs/intermediate/bidire-rep-s3.html)
+- concepts(aws backup)
+- [Amazon EFS Workshop](https://github.com/aws-samples/amazon-efs-workshop)
+
 ## todo
 
 - EBS
 - EFS
-- Glacier
-- Storage gateway
 - FSx
-- AWS backup
 
 - S3
-  - class 간 transfer
-  - s3 backup
-  - cross account policy
-  -
+  - inventory
