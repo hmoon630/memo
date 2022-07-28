@@ -28,13 +28,6 @@
 - strong consistency
 - versioning
 
-### questions
-
-> s3에 static web hosting이 있지만, cloudfront와 연계해서 사용하면 굳이 기능을 사용할 이유가 없다. 그럼 단독으로 static web hosting을 할 이유가 있을까?
-
-- 일단 성능과 비용 측면에서 보면 당연히 cloudfront 쪽이 우세할 것이다. cloudfront의 캐싱으로 trasnfer 비용도 줄어들고, 응답 시간도 줄어들 것이다.
-- 라고 생각했으나 http 요청 수에 대한 요금과 origin으로 데이터 전송하는 비용도 있다.
-
 ## 0725
 
 - concepts(cross account policy, lifecycle, Glacier, s3 multipart upload)
@@ -48,11 +41,13 @@
 - [Amazon EFS Workshop](https://github.com/aws-samples/amazon-efs-workshop)
 - efs iam based mount using efs helper
 
-## todo
+## 0727
 
-- EBS
-- EFS
-- FSx
+- efs accesspoint, cross region mount
+- concepts(ebs, s3 inventory)
 
-- S3
-  - inventory
+## 0728
+
+- [Storage Gateway - S3 File Gateway](https://github.com/aws-samples/aws-hybrid-storage-workshop)
+- [File Gateway & Transfer Family](https://github.com/aws-samples/aws-transfer-storage-gateway-workshop)
+- concepts(iam policy, FSx, cloudtrail)
